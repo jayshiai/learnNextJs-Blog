@@ -31,3 +31,20 @@ Learning the basics of the NextJS.
 5. Which basically means that, it uses javascript to load/transition to next page.
 6. This allow for transition without fully reloding the page, providing a seamless experience.
 7. `<Link>` also helps in `code-splitting` and `prefetching`.
+
+### Assets, Metadata, and CSS
+
+#### Assets
+
+1. You can store all your assets inside `public` folder which can be accessed from root directory.
+2. NextJS provides `<Image>` component out-of-the-box that provides various features like:
+   a.Ensuring your image is responsive on different screen sizes
+   b.Optimizing your images with a third-party tool or library
+   c.Only loading images when they enter the viewport.
+3. Import `<Image>` from `next/image`.
+
+#### Metadata
+
+1. In case you need to edit the head of the document, like changing `title`, then you can use `<Head>` component from `next/head`.
+2. NextJS also provides `<Script>` tag form `next/script` that allow to include external Javascript.
+3. This `<Script>` tag provides options like `lazyOnLoad` and `OnLoad` that effciently load the script in background.
