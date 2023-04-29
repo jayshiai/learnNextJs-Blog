@@ -57,3 +57,20 @@ Learning the basics of the NextJS.
 4. There is also feature for Global CSS. For this you have to create `pages/_app.jsx`.
 5. `_app.jsx` is a top-level React component that wraps all pages and allows to keep state when navigating pages or add global styles. (YOU NEED TO RESTART SERVER AFTER ADDING \_app.jsx)
 6. You can only import global css in \_app.jsx.
+
+### Pre-rendering and Data Fetching
+
+There are two forms of pre-rendering :-
+a. Static Site Generation
+b. Server Side Rendering
+
+#### Static Site Generation
+
+1. It means pre-rendering a static web page which can be stored on CDN for faster page-load.
+2. SSG can be done with Data and without Data.
+3. With data, nextjs fetches data during build-time to create a static page. This a one time process. For pages with constant updates to data refer SSR (Server Side Rendering).
+4. The pages without data are automatically generated. However of pages with data, next provide `getStaticProps` that does the data fetching and build static page.
+
+#### Server Side Rendering
+
+1.
