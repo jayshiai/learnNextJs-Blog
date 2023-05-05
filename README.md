@@ -73,4 +73,15 @@ b. Server Side Rendering
 
 #### Server Side Rendering
 
-1.
+1. In SSR, the page is rendered at every request to keep the data on the website up-to-date with current data.
+2. This can be achieved in NextJS using `getServerSideProps`.
+3. This pre-rendering method is used to improve SEO.
+
+#### Client Side Rendering
+
+1. Pre-render the static part of the website and fetch data on client side.
+2. This works well if SEO of the page doesn't matter, like user dashboards.
+3. NextJS has hook called `SWR`specifically made for this purpose.
+4. It handles caching, revalidation, focus tracking, refetching on interval, and more.
+
+### Dynamic Routes
