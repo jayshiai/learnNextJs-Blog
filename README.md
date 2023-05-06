@@ -85,3 +85,20 @@ b. Server Side Rendering
 4. It handles caching, revalidation, focus tracking, refetching on interval, and more.
 
 ### Dynamic Routes
+
+1. You can create dynamic routes using square brackets like `[name].jsx`. Here name is variable name of id that you'll use from array of ids.
+2. You MUST pass array of objects where key is `params` which contains another object that'll store our id.
+3. Example : `[
+  {
+    params: {
+      id: 'ssg-ssr'
+    }
+  },
+  {
+    params: {
+      id: 'pre-rendering'
+    }
+  }
+]`
+
+4.
