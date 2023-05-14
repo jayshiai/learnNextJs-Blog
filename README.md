@@ -101,4 +101,5 @@ b. Server Side Rendering
   }
 ]`
 
-4.
+4. Use `getStaticPaths` to create the dynamic routes.
+5. And use `getStaticProps` to fetch names of `ids` from database which can later be used to create dynamic routes.
